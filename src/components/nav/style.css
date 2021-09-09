@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  /*color palette*/
+  --maincolor: #241c4a;
+  --secondary: #f15a22;
+  --tertiary: white;
+  --bloop: #00aeef;
+  --floop: #9e5aa4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item {
+  font-family: "poppins";
+  color: var(--maincolor);
+  padding: 15px;
+  background-color: hidden;
+}
+
+#navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+#navs a {
+  text-decoration: none;
+  color: var(--floop);
+  padding: 8px 25px;
+  transition: all 0.2s ease;
+}
+
+.aL:hover {
+  transform: scale(1.2);
+  color: var(--bloop);
+}
+
+.aL:hover .i {
+  color: var(--secondary);
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  transform: translateX(-30px);
+}
+
+body nav ul li.active {
+  background-color: var(--tertiary);
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary),
+    0px 0px 80px var(--secondary);
+  transform: scale(1.05);
+}
+
+main section.pages div.page {
+  display: none;
+}
+
+main section.pages div.page.active {
+  display: block;
+}
+
+/* .hide {
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 8rem;
+  animation: type 0.5s steps(60, end);
+} */
+
+.transformed {
+  visibility: visible;
+  background-color: var(--bloop);
+  transition-delay: 250ms;
+  border: var(--secondary);
+  font-family: "Rock Salt", cursive;
+  border-width: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 8rem;
+  animation: type 0.5s steps(60, end);
+}
+
+.stay {
+  visibility: visible;
+  background-color: var(--bloop);
+  border: var(--secondary);
+  font-family: "Rock Salt", cursive;
+  border-width: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  width: 8rem;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+.delay1 {
+  transition-delay: 0.1s;
+}
+.delay2 {
+  transition-delay: 0.3s;
+}
+.delay3 {
+  transition-delay: 0.5s;
+}
+.delay4 {
+  transition-delay: 0.8s;
+}
+.delay5 {
+  transition-delay: 1s;
+}
