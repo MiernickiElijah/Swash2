@@ -1,7 +1,6 @@
 import './style.css'
 
 function Nav () {
-
     return ( <nav id="navbar">
     <ul id="navs">
         <li className="hide delay1 tab active" id="fast"><a href="../Swashbuckler/index.html">HOME</a></li>
@@ -11,7 +10,7 @@ function Nav () {
         <li className="hide delay5 tab" id="fast"><a href="../Swashbuckler/services.html">SERVICES</a></li>
     </ul>
 </nav>)
-
 }
+
 
 export default Nav; 
