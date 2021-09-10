@@ -1,5 +1,6 @@
 import Dots from './biomovie.mp4'
 import Self from './Self.jfif'
+
 import './style.css'
 
 function Bio () {
@@ -9,7 +10,7 @@ function Bio () {
         <video id="vid" playsInline autoPlay muted loop>
             <source src= {Dots} type="video/mp4"></source>
         </video>
-
+        
         <main className="animate__animated animate__fadeInLeft container col-xxl-8 px-4 py-5">
             <h1 className="header display-5 fw-bold lh-1 mb-3" id="banner">Elijah M.J.O. Miernicki</h1>
             <section className="aboutme row flex-lg-row-reverse align-items-center g-5 py-5"></section>

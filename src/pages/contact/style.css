@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  /*color palette*/
+  --maincolor: #241c4a;
+  --secondary: #f15a22;
+  --tertiary: white;
+  --bloop: #00aeef;
+  --floop: #9e5aa4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Background Video*/
+#vid {
+  object-fit: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*Project Pictures*/
+.pics:hover {
+  transform: scale(1.1);
+  transition-duration: 2s;
+}
+
+/*BIO*/
+
+#aboutMeTitle {
+  background: linear-gradient(to right, var(--secondary), transparent);
+  color: var(--tertiary);
+  font-family: "poppins";
+}
+
+p.lead {
+  color: var(--tertiary);
+  font-family: "poppins";
+}
+
+/*PROJECT*/
+.display-5.fw-bold.lh-1.mb-3 {
+  background: linear-gradient(to right, var(--secondary), transparent);
+}
+
+.projectHead {
+  text-decoration: none;
+  font-family: "poppins";
+  color: var(--tertiary);
+  opacity: 0;
+}
+
+.projectHead:hover {
+  color: var(--floop);
+}
+
+/*CONTACT*/
+.form-label {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.nav-item {
+  font-family: "poppins";
+  color: var(--maincolor);
+  padding: 15px;
+  background-color: hidden;
+}
+
+.aL:hover {
+  transform: scale(1.2);
+  color: var(--bloop);
+}
+
+.aL:hover .i {
+  color: var(--secondary);
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  transform: translateX(-30px);
+}
+
+#emailBtn {
+  font-family: "Rock Salt", cursive;
+  font-weight: bolder;
+  border: solid;
+  border-color: var(--maincolor);
+  font-size: 20px;
+  margin: 5px;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#emailBtn:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary);
+}
+
+#contactlist {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--maincolor);
+  background-color: none;
+}
+
+#footer {
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/*Services*/
+#gandalf {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  opacity: 0;
+}
+
+/* hide the nav links until clicked */
+.hide {
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 8rem;
+  animation: type 0.5s steps(60, end);
+}
+
+.transformed {
+  visibility: visible;
+  background-color: var(--bloop);
+  transition-delay: 250ms;
+  border: var(--secondary);
+  font-family: "Rock Salt", cursive;
+  border-width: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 8rem;
+  animation: type 0.5s steps(60, end);
+}
+
+.stay {
+  visibility: visible;
+  background-color: var(--bloop);
+  border: var(--secondary);
+  font-family: "Rock Salt", cursive;
+  border-width: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  width: 8rem;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+.delay1 {
+  transition-delay: 0.1s;
+}
+.delay2 {
+  transition-delay: 0.3s;
+}
+.delay3 {
+  transition-delay: 0.5s;
+}
+.delay4 {
+  transition-delay: 0.8s;
+}
+.delay5 {
+  transition-delay: 1s;
+}
+
+/* NAV */
+#navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+#navs a {
+  text-decoration: none;
+  color: var(--floop);
+  padding: 8px 25px;
+  transition: all 0.2s ease;
+}
+
+#fast:hover {
+  background-color: var(--tertiary);
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  border: var(--floop);
+  border-width: 5px;
+  border-radius: 8px;
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary),
+    0px 0px 80px var(--secondary);
+  cursor: pointer;
+}
+
+/* Main */
+#centerAll {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  justify-content: center;
+  left: 50%;
+  right: 50%;
+}
+
+#logo {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.95;
+  height: 250px;
+  width: 250px;
+}
+
+/*Explore BTN */
+#explore span {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Rock Salt", cursive;
+  text-transform: uppercase;
+  color: var(--maincolor);
+  background-color: var(--tertiary);
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.35vw;
+  font-weight: 900;
+  padding: 15px;
+  -webkit-text-stroke: 0.18vw var(--maincolor);
+}
+
+#explore:hover {
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary),
+    0px 0px 80px var(--secondary);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Select NAV on Page */
+body nav ul li.active {
+  background-color: var(--tertiary);
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary),
+    0px 0px 80px var(--secondary);
+  transform: scale(1.05);
+}
+
+main section.pages div.page {
+  display: none;
+}
+
+main section.pages div.page.active {
+  display: block;
+}
+
+/* Screen Size */
+#explore {
+  min-height: 65px;
+  min-width: 185px;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+  #centerAll {
+    position: relative;
+    top: 200px;
+    left: 0%;
+    right: 50%;
+  }
+}
