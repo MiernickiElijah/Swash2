@@ -289,6 +289,7 @@ p.lead {
   flex-wrap: wrap;
   font-family: "Rock Salt", cursive;
   text-transform: uppercase;
+  justify-content: center;
   color: var(--maincolor);
   background-color: var(--tertiary);
   border-width: 5px;

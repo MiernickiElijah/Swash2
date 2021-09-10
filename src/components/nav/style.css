@@ -97,7 +97,7 @@ p.lead {
 .aL:hover .i {
   color: var(--secondary);
   transition-delay: 0.2s;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   transform: translateX(-30px);
 }
 
@@ -164,13 +164,12 @@ p.lead {
   margin: 5px;
   transition-property: color flex;
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
   display: flex;
   padding: 5px;
   margin: 5px;
   overflow: hidden;
   width: 8rem;
-  animation: type 0.5s steps(60, end);
 }
 
 .transformed {
@@ -186,7 +185,7 @@ p.lead {
   position: sticky;
   transition-property: color flex;
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   display: flex;
   padding: 5px;
   margin: 5px;
@@ -206,7 +205,7 @@ p.lead {
   align-items: center;
   position: sticky;
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   display: flex;
   padding: 5px;
   margin: 5px;
@@ -217,22 +216,6 @@ p.lead {
   from {
     width: 0;
   }
-}
-
-.delay1 {
-  transition-delay: 0.1s;
-}
-.delay2 {
-  transition-delay: 0.3s;
-}
-.delay3 {
-  transition-delay: 0.5s;
-}
-.delay4 {
-  transition-delay: 0.8s;
-}
-.delay5 {
-  transition-delay: 1s;
 }
 
 /* NAV */
