@@ -112,12 +112,18 @@ p.lead {
   background-color: hidden;
 }
 
+.icon {
+  height: 30px;
+}
+
 .aL:hover {
   transform: scale(1.2);
   color: var(--bloop);
+  height: 30px;
 }
 
-.aL:hover .i {
+.aL:hover .icon {
+  height: 30px;
   color: var(--secondary);
   transition-delay: 0.2s;
   transition-duration: 0.5s;

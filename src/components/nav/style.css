@@ -296,7 +296,7 @@ p.lead {
 }
 
 /* Select NAV on Page */
-body nav ul li.active {
+body nav ul a.active li {
   background-color: var(--tertiary);
   border-width: 5px;
   border-color: var(--floop);

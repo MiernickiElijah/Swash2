@@ -1,14 +1,26 @@
-import './style.css'
+import { NavLink } from 'react-router-dom';
+import './style.css';
 
-function Nav () {
-    return ( <nav id="navbar">
-    <ul id="navs">
-        <li className="  tab active" id="fast"><a href="/">Home</a></li>
-        <li className="  tab" id="fast"><a href="/bio">BIO</a></li>
-        <li className="  tab" id="fast"><a href="/projects">PROJECTS</a></li>
-        <li className="  tab" id="fast"><a href="/contact">CONTACT</a></li>
-    </ul>
-</nav>)
-}
+function Nav() {
+    return (<nav id="navbar">
+        <ul id="navs">
+            <NavLink to="/" exact activeClassName="active">
+                <li className="hide tab" id="fast">Home</li>
+            </NavLink>
 
-export default Nav; 
+            <NavLink to="/bio" activeClassName="active">
+                <li className="hide tab" id="fast">BIO</li>
+            </NavLink>
+
+            <NavLink to="/projects" activeClassName="active">
+                <li className="hide tab" id="fast">PROJECTS</li>
+            </NavLink>
+
+            <NavLink to="/contact" activeClassName="active">
+                <li className="hide  tab" id="fast">CONTACT</li>
+            </NavLink>
+        </ul>
+    </nav>);
+};
+
+export default Nav;

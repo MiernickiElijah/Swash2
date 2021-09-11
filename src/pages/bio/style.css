@@ -34,10 +34,10 @@ html {
 
 /*BIO*/
 #banner {
-  background: url("./purple2.png");
+  /* background: url(./purple2.png);
   background-repeat: no-repeat;
   background-size: 60% 100%;
-  padding: 20px 15px;
+  padding: 20px 15px; */
   color: var(--tertiary);
   font-family: "rock salt";
   opacity: 0;
