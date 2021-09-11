@@ -1,6 +1,9 @@
 import Dots from './biomovie.mp4'
 import Head from './Head.mp4'
+import resume from './resume.pdf'
 import './style.css'
+
+
 
 function Contact () {
     return(
@@ -14,13 +17,13 @@ function Contact () {
             <ul className="nav nav-pills nav-flush flex-column mb-auto text-center" id="contactlist">
                 <a className="contactLink aL" href="mailto:miernickielijah@gmail.com"><i
                         className="contact fas fa-inbox fa-lg i"></i><strong>Miernickielijah@gmail.com</strong></a>
-                <a className="contactLink aL" href="https://github.com/MiernickiElijah" target="_blank"><i
+                <a className="contactLink aL" href="https://github.com/MiernickiElijah" target="_blank" rel="noreferrer"><i
                         className="contact fab fa-github fa-lg i"></i><strong>github.com/MiernickiElijah</strong></a>
                 <a className="contactLink aL" href=" https://www.linkedin.com/in/miernickielijah/" target="_blank"><i
                         className="contact fab fa-linkedin fa-lg i"></i><strong>linkedIn.com/in/miernickielijah</strong></a>
                 <a className="contactLink aL" href=" tel:7634129985"><i className="contact fas fa-phone-square fa-lg i"></i>
                     <strong>763-412-9985</strong></a>
-                <a className="contactLink aL" href=" ../Swashbuckler/assets/Elijah Miernicki_Resume.pdf" target="_blank"><i
+                <a className="contactLink aL" href= {resume} target="_blank"><i
                         className="fas fa-file-pdf fa-lg i"></i>Resume</a>
             </ul>
         </div>
