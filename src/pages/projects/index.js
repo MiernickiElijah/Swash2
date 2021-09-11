@@ -132,6 +132,9 @@ function Projects () {
                 </article>
             </section>
         </div>
+        <footer id="footer">
+        <a href="#top">Take me to the TOP!</a>
+    </footer>
     </main>
     </>
     )
