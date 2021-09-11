@@ -29,7 +29,6 @@ function App() {
             <Projects />
           </Route>
           <Route exact path="/services">
-
           </Route>
       </Switch>
     </div>
